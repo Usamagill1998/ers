@@ -185,6 +185,7 @@ class ListScreen extends Component {
     navigate("HomeStack")
   }
 
+  
   render() {
     
     let Loading:any = '';
@@ -231,7 +232,7 @@ class ListScreen extends Component {
         <View style={{flex:0.1}}>
           <View style={{ borderWidth: 2, margin: 10, borderRadius: 50, borderColor: '#318080'}}>
             <TextInput
-              style={{padding: 15, height: 40}}
+              style={{padding: 8, height: 40}}
               underlineColorAndroid="transparent"
               placeholder='Search Here'
               errorStyle={{ color: 'red' }}

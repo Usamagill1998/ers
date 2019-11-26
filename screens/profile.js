@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button, Image, WebView, BackHandler } from 'react-native';
+import { StyleSheet, Text, View, Button, Image, BackHandler } from 'react-native';
 
 import {createStackNavigator, createAppContainer} from 'react-navigation';
 import { Toast } from 'native-base';
@@ -7,6 +7,7 @@ import {connect} from 'react-redux'
 import { firstLaunchCheck, INC, DEC } from "../actions/index";
 import Loader from './LoaderScreen';
 import { withNavigation } from 'react-navigation';
+import { WebView } from 'react-native-webview';
 
 
 export class ProfileScreen extends React.Component {
@@ -91,7 +92,9 @@ export class PricingScreen extends React.Component {
       const {navigate} = this.props.navigation;
       return (
         <WebView
-        source={{uri: 'https://easyrentsale.com/pricing?token=' + this.props.facebookToken.FirstLaunchCheck.token}}
+        source={{uri: 'https://easyrentsale.com/pricing?token=' 
+      //  + this.props.facebookToken.FirstLaunchCheck.token
+      }}
         style={{marginTop: 20}}
       />
       );
@@ -127,7 +130,9 @@ export class PricingScreen extends React.Component {
       const {navigate} = this.props.navigation;
       return (
         <WebView
-          source={{uri: 'https://easyrentsale.com/product/add?token=' + this.props.facebookToken.FirstLaunchCheck.token}}
+          source={{uri: 'https://easyrentsale.com/product/add?token=' 
+        //  + this.props.facebookToken.FirstLaunchCheck.token
+        }}
           style={{marginTop: 20}}
         />
       );

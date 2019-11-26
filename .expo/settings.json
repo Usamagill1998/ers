@@ -1,8 +1,8 @@
 {
+  "urlRandomness": "fq-w4v",
   "hostType": "lan",
   "lanType": "ip",
   "dev": true,
   "minify": false,
-  "urlRandomness": "k3-h2e",
   "https": false
 }

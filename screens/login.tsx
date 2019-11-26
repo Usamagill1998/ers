@@ -5,7 +5,7 @@
  * @format
  * @flow
  */
-// import { Toast } from 'native-base';
+ import { Toast } from 'native-base';
 
 import React, {Fragment, Component} from 'react';
 import {
@@ -16,7 +16,7 @@ import {
   Button,
   Alert,
   Image,
-  Toast,
+  
   Text,
   StatusBar,
   TouchableOpacity,
@@ -217,10 +217,12 @@ class LoginScreen extends Component {
                 style={{top: 30, height: 35}} />
           </View>
           <View style={{flex: 0.8}}>
+
           <TextField
             style={styles.input}
-            textColor= 'white'
-            label='Email'
+            textColor='green' 
+            label='User Name'
+            tintColor='#F7810A'
             value={this.state.email}
             onChangeText={ (email) => this.setState({ email }) }
           />
@@ -237,9 +239,11 @@ class LoginScreen extends Component {
           <View style={{flex: 0.8}}>
             
             <TextField
+            
               style={styles.input}  
               textColor= 'white'
               label='Password'
+              tintColor='#F7810A'
               secureTextEntry={this.state.hidePassword}
               value={this.state.password}
               onChangeText={ (password) => this.setState({ password }) }
@@ -310,6 +314,7 @@ const styles = StyleSheet.create({
   },
   input: {
     color: 'white',
+
   },
   engine: {
     position: 'absolute',

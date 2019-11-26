@@ -175,14 +175,14 @@ class HelloWorld extends React.Component {
                 <View style={{flex: 1, justifyContent: 'flex-end', flexDirection: 'row', marginBottom: 5}}>
                     <View style={{flex: 0.5}}>
                       <TouchableOpacity
-                        style={{padding: 6, margin: 6, backgroundColor: 'orange', borderColor: 'white', botderWidth: 3, borderRadius: 10}}
+                        style={{padding: 11, margin: 6, backgroundColor: 'orange', borderColor: 'white', botderWidth: 3, borderRadius: 10}}
                         onPress={this.sms_helper}>
                         <Text style={{color: 'white', alignSelf: 'center'}}>SMS</Text>
                       </TouchableOpacity>
                     </View>
                     <View style={{flex: 0.5}}>
                     <TouchableOpacity
-                        style={{padding: 6, margin: 6, backgroundColor: 'orange', borderColor: 'white', botderWidth: 3, borderRadius: 10}}
+                        style={{padding: 11, margin: 6, backgroundColor: 'orange', borderColor: 'white', botderWidth: 3, borderRadius: 10}}
                         onPress={this.call_helper}
                       >
 

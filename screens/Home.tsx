@@ -166,7 +166,7 @@ class HomeScreen extends Component {
       <ImageBackground source={require('../assets/BG.png')} style={styles.body}>
 
       <View style={styles.container}> 
-        <Text style={{color: 'white', alignSelf: 'center', fontSize: 15, padding: 5}}>WELCOME TO <Text style={{color: 'red'}}>EASY</Text>
+        <Text style={{color: 'white', alignSelf: 'center', fontSize: 15, padding: 5}}>WELCOME TO <Text style={{color: '#F7810A'}}>EASY</Text>
         </Text>
         <Text style={{color: 'white', alignSelf: 'center', fontSize: 15, padding: 5}}>Choose Your Service</Text>
         {Loading}
