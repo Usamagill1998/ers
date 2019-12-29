@@ -90,7 +90,7 @@ class HelloWorld extends React.Component {
                })
         return
       }
-      sms(this.state.data.user.mobile_no, 'Hi friend').catch(console.error)
+      sms(this.state.data.user.mobile_no).catch(console.error)
     }
 
     call_helper(){
@@ -103,7 +103,8 @@ class HelloWorld extends React.Component {
                })
         return
       }
-      Linking.openURL(`tel://${this.state.data.user.mobile_no}`)
+    
+      Linking.openURL(`tel:${this.state.data.user.mobile_no}`)
     }
     
     render() {
@@ -122,6 +123,7 @@ class HelloWorld extends React.Component {
               pic_data[i] = {url: this.state.data.pictures[i]}
           }
           if(pic_data.length == 0){ 
+
 
             pic_data[0] = 
           

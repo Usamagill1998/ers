@@ -56,7 +56,7 @@ const AuthStackNavigation = createStackNavigator({
           </TouchableWithoutFeedback>),
       headerRight: (
         <TouchableWithoutFeedback
-          onPress={() => navigation.navigate('Home')}
+          
         >
             <Image resizeMode={'contain'} style={{height: 30}} source={require('./assets/HomeIcon.png')}/>
           </TouchableWithoutFeedback>)
@@ -282,7 +282,7 @@ export const Navigator = createDrawerNavigator(
         itemsContainerStyle: {
           marginVertical: 0,
         },
-        activeBackgroundColor:"#024b30",
+        activeBackgroundColor:"orange",
     },
     
 }

@@ -6,7 +6,7 @@ import {
   View,
   TextInput,
   Button,
-  Toast,
+  
   TouchableHighlight,
   Image,
   Alert,
@@ -29,7 +29,7 @@ import {
   UIActivityIndicator,
   WaveIndicator,
 } from 'react-native-indicators';
-// import { Toast } from 'native-base';
+ import { Toast } from 'native-base';
 import Expo from "expo";
 import * as Font from 'expo-font';
 import { Ionicons } from '@expo/vector-icons';
@@ -154,7 +154,7 @@ export default class RegisterScreen extends Component {
             this.setState({isLoading: false})
             const {navigate} = this.props.navigation;
             Toast.show({
-              text: responseJson.data,
+              text: 'Registered Successfully',
               buttonText: 'Okay',
               type: "success"
                })
@@ -185,6 +185,7 @@ export default class RegisterScreen extends Component {
     }
 
   }
+
 
 
   render() {
@@ -230,6 +231,7 @@ export default class RegisterScreen extends Component {
             <TextField
               style={styles.input}
               textColor= 'white'
+              tintColor='#F7810A'
               label='Name'
               value={this.state.name}
               onChangeText={ (name) => this.setState({ name }) }
@@ -247,6 +249,7 @@ export default class RegisterScreen extends Component {
             <TextField
               style={styles.input}
               textColor= 'white'
+              tintColor='#F7810A'
               label='Email'
               value={this.state.email}
               onChangeText={ (email) => this.setState({ email }) }
@@ -263,6 +266,7 @@ export default class RegisterScreen extends Component {
             <TextField
               style={styles.input}
               textColor= 'white'
+              tintColor='#F7810A'
               label='Username'
               value={this.state.username}
               onChangeText={ (username) => this.setState({ username }) }
@@ -279,6 +283,7 @@ export default class RegisterScreen extends Component {
               <TextField
                 style={styles.input}  
                 textColor= 'white'
+                tintColor='#F7810A'
                 label='Password'
                 secureTextEntry={this.state.hidepassword1}
                 value={this.state.password}
@@ -305,6 +310,7 @@ export default class RegisterScreen extends Component {
               <TextField
                 style={styles.input}  
                 textColor= 'white'
+                tintColor='#F7810A'
                 label='Password'
                 secureTextEntry={this.state.hidepassword2}
                 value={this.state.cpassword}

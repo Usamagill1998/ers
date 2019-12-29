@@ -80,7 +80,7 @@ export default class DrawerContent extends Component {
                 onPress={() => {this.changeColor(2)}}  
 
               >
-            <Text style={{fontSize: 20, fontWeight: 'bold', color: 'white'}}>Ads Posting</Text>
+            <Text style={{fontSize: 20, fontWeight: 'bold', color: 'red'}}>Ads Posting</Text>
             </TouchableWithoutFeedback>
           </View>
         </View>

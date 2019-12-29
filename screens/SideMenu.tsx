@@ -163,7 +163,7 @@ class SideMenu extends React.Component {
                 </View>
                 <View style={{borderBottomColor: 'black', borderBottomWidth: 1}}/>
                 <View style={{padding: 10}}>
-                  <Text style={{color: 'red', fontWeight: 'bold', fontSize: 18}}>Coming Soon</Text>
+                  <Text style={{color: 'orange', fontWeight: 'bold', fontSize: 18}}>Coming Soon</Text>
                   <View style={{flex: 1, flexDirection: 'row', marginTop: 20}}>
                     <View style={{flex: 0.25}}>
                     <Image style={{height: 25, width: 25}} source={require('../assets/EasyTaxi.png')}

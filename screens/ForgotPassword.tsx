@@ -101,16 +101,16 @@ export default class ForgotPasswordScreen extends Component {
       .then((responseJson) => {
         if(responseJson.result){
           Toast.show({
-              text: responseJson.data,
+              text: 'Please check your Email',
               buttonText: 'Okay',
               type: "success"
                })
           this.setState({isLoading: false})
-
+          this.props.navigation.navigate('LoginStack')
         }
         else {
           Toast.show({
-              text: responseJson.error,
+              text: 'Error',
               buttonText: 'Okay',
               type: "danger"
                })
@@ -168,6 +168,7 @@ export default class ForgotPasswordScreen extends Component {
           <TextField
             style={styles.input}
             textColor= 'white'
+            tintColor='#F7810A'
             label='Email'
             value={this.state.email}
             onChangeText={ (email) => this.validateEmail(email) }

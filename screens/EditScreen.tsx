@@ -290,7 +290,7 @@ class EditScreen extends Component {
         Loading=null;
       }
     let { pickerResult } = this.state;
-    let imageUri = pickerResult ? `data:image/jpg;base64,${pickerResult.base64}` : null;
+    let imageUri = pickerResult ? `data:image/jpg;base64,${pickerResult.base64}` :`data:image/jpg`;;
     let profile = <Image
                     source={{uri: this.state.profile}}
                     style={{ width: 100, height: 100, borderRadius: 100/2}}
@@ -306,8 +306,10 @@ class EditScreen extends Component {
                 source={{uri: imageUri}}
                 style={{ width: 100, height: 100, borderRadius: 100/2, borderColor: 'white', borderWidth: 10 }}
               />
-            : profile}
+             : profile}
         </TouchableOpacity>
+
+
 
           <View style={{flex: 1, flexDirection: 'row', padding: 10}}>
             <View style={{flex: 0.2}}>
@@ -318,6 +320,7 @@ class EditScreen extends Component {
             <TextField
               style={styles.input}
               textColor= 'white'
+              tintColor='#F7810A'
               label='Name'
               value={this.state.name}
               onChangeText={ (name) => this.setState({ name }) }
@@ -334,6 +337,7 @@ class EditScreen extends Component {
             <TextField
               style={styles.input}
               textColor= 'white'
+              tintColor='#F7810A'
               label='Email'
               value={this.state.email}
               onChangeText={ (email) => this.setState({ email }) }
@@ -350,6 +354,7 @@ class EditScreen extends Component {
               editable={false} selectTextOnFocus={false}
               style={styles.input}
               textColor= 'white'
+              tintColor='#F7810A'
               label='Username'
               value={this.state.username}
               onChangeText={ (username) => this.setState({ username }) }
@@ -365,6 +370,7 @@ class EditScreen extends Component {
               <TextField
                 style={styles.input}  
                 textColor= 'white'
+                tintColor='#F7810A'
                 label='Password'
                 secureTextEntry={this.state.hidePassword}
                 value={this.state.password}
@@ -390,6 +396,7 @@ class EditScreen extends Component {
             <TextField
               style={styles.input}
               textColor= 'white'
+              tintColor='#F7810A'
               label='Mobile'
               value={this.state.mobile}
               onChangeText={ (mobile) => this.setState({ mobile }) }
